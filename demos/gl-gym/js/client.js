@@ -3,7 +3,7 @@ const Pages = { aluno:{}, staff:{} };
 const St = { treinoTab:'treinos', cal:null, progMetric:'weight' };
 
 const Run = {
-  key:id => 'atlas_run_' + id,
+  key:id => 'glgym_run_' + id,
   get(id){ try { const r = JSON.parse(localStorage.getItem(this.key(id))); if (r) return r; } catch(e){} return {start:null, done:{}, vals:{}}; },
   save(id, r){ try { localStorage.setItem(this.key(id), JSON.stringify(r)); } catch(e){} },
   clear(id){ try { localStorage.removeItem(this.key(id)); } catch(e){} }
@@ -269,7 +269,7 @@ A.editMe = () => {
   $('#sv', o).onclick = () => { Object.assign(u, UI.form(o)); Store.save(); UI.close(o); UI.toast('Dados atualizados'); App.render(true); };
 };
 A.payPix = el => {
-  const p = Store.d.payments.find(x => x.id === el.dataset.id), code = '00020126580014br.gov.bcb.pix0136atlas-academia-demo-' + p.id.slice(-6) + '5204000053039865802BR5913ATLAS ACADEMIA6009SAO PAULO';
+  const p = Store.d.payments.find(x => x.id === el.dataset.id), code = '00020126580014br.gov.bcb.pix0136gl-gym-demo-' + p.id.slice(-6) + '5204000053039865802BR5913GL GYM6009SAO PAULO';
   const o = UI.modal(`<div class="sheet-h"><h2>Pagar com PIX</h2><button class="icon-btn" data-act="close">${icon('x')}</button></div>
     <div style="text-align:center">${fakeQR(code)}<h2 style="margin-top:12px">${brl(p.amount)}</h2><p class="muted small">${esc(p.desc)}</p></div>
     <div class="field" style="margin-top:12px"><label>PIX copia e cola</label><textarea class="textarea" readonly style="min-height:70px;font-size:.75rem">${code}</textarea></div>

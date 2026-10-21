@@ -392,5 +392,5 @@ Pages.staff.config = () => {
     <div class="card"><div class="card-h"><h3>Aparência</h3></div><button class="btn" data-act="theme">${icon(UI.theme()==='dark'?'sun':'moon','sm')} Alternar tema claro/escuro</button></div></div></div>`;
 };
 I.cfg = el => { Store.d.gym[el.dataset.f] = el.value; Store.save(); };
-A.cfgExport = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(Store.d, null, 2)], {type:'application/json'})); a.download = 'atlas-academia-dados.json'; a.click(); };
-A.cfgReset = () => UI.confirm('Restaurar todos os dados de demonstração? Alterações feitas serão perdidas.', () => { Store.reset(); Object.keys(localStorage).filter(k => k.startsWith('atlas_run_')).forEach(k => localStorage.removeItem(k)); UI.toast('Dados restaurados', 'repeat'); App.render(true); }, {danger:true, label:'Restaurar'});
+A.cfgExport = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(Store.d, null, 2)], {type:'application/json'})); a.download = 'gl-gym-dados.json'; a.click(); };
+A.cfgReset = () => UI.confirm('Restaurar todos os dados de demonstração? Alterações feitas serão perdidas.', () => { Store.reset(); Object.keys(localStorage).filter(k => k.startsWith('glgym_run_')).forEach(k => localStorage.removeItem(k)); UI.toast('Dados restaurados', 'repeat'); App.render(true); }, {danger:true, label:'Restaurar'});

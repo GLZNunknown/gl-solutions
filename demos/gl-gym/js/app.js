@@ -39,9 +39,9 @@ function shell(u, area, page, html) {
     (area === 'staff' ? `<button data-act="more" class="${['exercicios','checkins','planos','financeiro','professores','avisos','config'].includes(cur) ? 'on' : ''}">${icon('more')}Mais</button>` : '');
   const tools = `<button class="icon-btn" data-act="bell" aria-label="Notificações">${icon('bell')}${hasN ? '<i class="dot"></i>' : ''}</button><button class="icon-btn" data-act="theme" aria-label="Alternar tema">${icon(UI.theme() === 'dark' ? 'sun' : 'moon')}</button>`;
   return `<div class="shell">
-    <aside class="sidebar"><div class="brand"><div class="logo">A</div>${esc(gym)}</div><nav>${side}</nav>
+    <aside class="sidebar"><div class="brand"><div class="logo">GL</div>${esc(gym)}</div><nav>${side}</nav>
       <div class="me"><div class="avatar sm">${initials(u.name)}</div><div class="who"><b>${esc(u.name)}</b><span class="muted tiny">${u.role === 'admin' ? 'Administrador' : u.role === 'prof' ? 'Professor' : 'Aluno'}</span></div><button class="icon-btn" style="width:34px;height:34px" data-act="logout" aria-label="Sair">${icon('logout','sm')}</button></div></aside>
-    <div class="main"><header class="topbar"><div class="brand"><div class="logo">A</div>${esc(gym)}</div><span class="sp"></span>${tools}</header>
+    <div class="main"><header class="topbar"><div class="brand"><div class="logo">GL</div>${esc(gym)}</div><span class="sp"></span>${tools}</header>
       <div class="desk-bar">${tools}</div><main class="content" id="page">${html}</main></div>
     <nav class="bottomnav" aria-label="Navegação">${bottom}</nav></div>`;
 }
@@ -58,11 +58,11 @@ A.logout = () => { document.querySelectorAll('.overlay').forEach(o => o.remove()
 function loginView() {
   const demos = [['u_s1','Aluno','Veja treinos, agenda, progresso e pagamentos','user'],['u_p1','Professor','Monte treinos e acompanhe seus alunos','dumbbell'],['u_admin','Administrador','Alunos, planos, financeiro e equipe','grid']];
   return `<div class="login">
-    <div class="login-art"><div class="row" style="font-weight:700;font-size:1.1rem"><div class="logo" style="background:var(--accent-ink);color:var(--accent)">A</div>${esc(Store.d.gym.name)}</div>
+    <div class="login-art"><div class="row" style="font-weight:700;font-size:1.1rem"><div class="logo" style="background:var(--accent-ink);color:var(--accent)">GL</div>${esc(Store.d.gym.name)}</div>
       <div><h2>Gestão de academia simples, completa e feita para o celular.</h2>
       <div class="feat">${['Treinos com passo a passo e cronômetro de descanso','Agenda de aulas com reservas','Planos, vendas e financeiro em um só lugar','Painel com indicadores em tempo real'].map(t => `<div>${icon('check','sm')}${t}</div>`).join('')}</div></div>
       <div class="small" style="opacity:.6">Projeto de portfólio — dados fictícios</div></div>
-    <div class="login-box"><div class="row" style="margin-bottom:6px"><div class="logo">A</div><b>${esc(Store.d.gym.name)}</b></div>
+    <div class="login-box"><div class="row" style="margin-bottom:6px"><div class="logo">GL</div><b>${esc(Store.d.gym.name)}</b></div>
       <h1 style="margin-top:14px">Bem-vindo(a)</h1><p class="muted">Escolha um perfil para explorar a demonstração.</p>
       <div class="roles">${demos.map(d => `<button class="role" data-act="demoLogin" data-id="${d[0]}"><div class="ic">${icon(d[3])}</div><div class="grow"><b>${d[1]}</b><div class="muted small">${d[2]}</div></div>${icon('chevR','sm')}</button>`).join('')}</div>
       <div class="divider"></div><form id="lf"><div class="field"><label>E-mail</label><input class="input" name="email" type="email" autocomplete="username" placeholder="marina@email.com"></div><div class="field"><label>Senha</label><input class="input" name="pass" type="password" autocomplete="current-password" placeholder="123456"></div><button class="btn primary block" type="submit">Entrar</button></form>

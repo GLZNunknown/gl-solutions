@@ -1,13 +1,13 @@
 /* Núcleo: store (localStorage), seletores, modal/toast, tema e delegação de eventos */
 const Store = {
-  KEY:'atlas_academia_v1', d:null,
+  KEY:'glgym_v1', d:null,
   init(){ try { const r = localStorage.getItem(this.KEY); if (r) { this.d = JSON.parse(r); return; } } catch(e){} this.d = buildSeed(); this.save(); },
   save(){ try { localStorage.setItem(this.KEY, JSON.stringify(this.d)); } catch(e){} },
   reset(){ this.d = buildSeed(); this.save(); }
 };
 const Auth = {
-  get id(){ try { return localStorage.getItem('atlas_auth'); } catch(e){ return null; } },
-  set(id){ try { id ? localStorage.setItem('atlas_auth', id) : localStorage.removeItem('atlas_auth'); } catch(e){} },
+  get id(){ try { return localStorage.getItem('glgym_auth'); } catch(e){ return null; } },
+  set(id){ try { id ? localStorage.setItem('glgym_auth', id) : localStorage.removeItem('glgym_auth'); } catch(e){} },
   get user(){ return Store.d.users.find(u => u.id === this.id) || null; }
 };
 
@@ -115,8 +115,8 @@ const UI = {
   head(title, sub, acts=''){ return `<div class="page-head"><div><h1>${title}</h1>${sub ? `<div class="sub">${sub}</div>` : ''}</div>${acts ? `<div class="acts">${acts}</div>` : ''}</div>`; },
   empty(ic, msg){ return `<div class="empty">${icon(ic)}<div>${msg}</div></div>`; },
   theme(){ return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'; },
-  setTheme(t){ document.documentElement.dataset.theme = t; try { localStorage.setItem('atlas_theme', t); } catch(e){} },
-  initTheme(){ let t = null; try { t = localStorage.getItem('atlas_theme'); } catch(e){} if (!t) t = document.documentElement.dataset.theme; if (!t) t = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light'; document.documentElement.dataset.theme = t; },
+  setTheme(t){ document.documentElement.dataset.theme = t; try { localStorage.setItem('glgym_theme', t); } catch(e){} },
+  initTheme(){ let t = null; try { t = localStorage.getItem('glgym_theme'); } catch(e){} if (!t) t = document.documentElement.dataset.theme; if (!t) t = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light'; document.documentElement.dataset.theme = t; },
   wa(phone, text=''){ return 'https://wa.me/55' + String(phone).replace(/\D/g,'') + (text ? '?text=' + encodeURIComponent(text) : ''); }
 };
 A.close = (el) => UI.close(el.closest('.overlay'));

@@ -66,7 +66,7 @@ function buildSeed() {
   const R = (a,b) => a + Math.floor(rnd()*(b-a+1));
   const pick = arr => arr[Math.floor(rnd()*arr.length)];
   const T = today();
-  const D = { v:1, gym:{ name:'Atlas Academia', phone:'(11) 4000-1234', address:'Av. Dom Pedro I, 1200 — Santo André' } };
+  const D = { v:1, gym:{ name:'GL Gym', phone:'(11) 4000-1234', address:'Av. Dom Pedro I, 1200 — Santo André' } };
 
   D.plans = [
     {id:'p1', name:'Essencial', months:1,  price:99.9,  active:true, perks:['Acesso à musculação','App com treinos','Avaliação inicial']},
@@ -79,11 +79,11 @@ function buildSeed() {
   const exId = n => D.exercises.find(e => e.name === n).id;
 
   D.users = [
-    {id:'u_admin', role:'admin', name:'Carla Nogueira', email:'admin@atlas.fit', phone:'(11) 98888-0001', pass:'123456', title:'Gerente'},
-    {id:'u_p1', role:'prof', name:'Rafael Moreira', email:'rafael@atlas.fit', phone:'(11) 98888-0002', pass:'123456', title:'Personal · Musculação'},
-    {id:'u_p2', role:'prof', name:'Juliana Prado', email:'juliana@atlas.fit', phone:'(11) 98888-0003', pass:'123456', title:'Aulas coletivas'},
-    {id:'u_p3', role:'prof', name:'Bruno Tavares', email:'bruno@atlas.fit', phone:'(11) 98888-0004', pass:'123456', title:'Funcional · HIIT'},
-    {id:'u_p4', role:'prof', name:'Camila Rocha', email:'camila@atlas.fit', phone:'(11) 98888-0005', pass:'123456', title:'Yoga · Pilates'}
+    {id:'u_admin', role:'admin', name:'Carla Nogueira', email:'admin@glgym.fit', phone:'(11) 98888-0001', pass:'123456', title:'Gerente'},
+    {id:'u_p1', role:'prof', name:'Rafael Moreira', email:'rafael@glgym.fit', phone:'(11) 98888-0002', pass:'123456', title:'Personal · Musculação'},
+    {id:'u_p2', role:'prof', name:'Juliana Prado', email:'juliana@glgym.fit', phone:'(11) 98888-0003', pass:'123456', title:'Aulas coletivas'},
+    {id:'u_p3', role:'prof', name:'Bruno Tavares', email:'bruno@glgym.fit', phone:'(11) 98888-0004', pass:'123456', title:'Funcional · HIIT'},
+    {id:'u_p4', role:'prof', name:'Camila Rocha', email:'camila@glgym.fit', phone:'(11) 98888-0005', pass:'123456', title:'Yoga · Pilates'}
   ];
 
   /* modelos */
