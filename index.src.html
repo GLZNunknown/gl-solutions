@@ -133,6 +133,16 @@ a.shot{display:block;text-decoration:none}
 .case.live .go:hover{text-decoration:underline}
 .case .hint{margin-top:8px;font-size:.8rem;color:var(--muted)}
 
+.custom{margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;padding:34px 38px;border-radius:var(--r);border:1px solid rgba(242,163,58,.35);background:linear-gradient(135deg,rgba(242,163,58,.10),rgba(18,31,59,.6) 55%)}
+.custom .cu-txt{flex:1 1 460px;min-width:0}
+.custom .eyebrow{margin-bottom:8px}
+.custom h3{font-size:1.5rem;margin-bottom:10px}
+.custom p{color:var(--muted);max-width:640px}
+.cu-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.cu-chips span{font-size:.84rem;color:var(--text);background:rgba(255,255,255,.05);border:1px solid var(--line);padding:7px 14px;border-radius:999px}
+.custom .btn{flex:none}
+@media(max-width:700px){.custom{padding:26px 22px}.custom .btn{width:100%;justify-content:center}}
+
 /* PROCESS */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
 .step{padding:28px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,255,255,.025)}
@@ -295,6 +305,7 @@ footer img{height:34px;width:auto}
     <article class="case rv live"><a class="shot preview" href="demos/gl-atende/index.html" target="_blank" rel="noopener" aria-label="Abrir demonstração do GL Atende"><img class="pv-d" src="assets/glatende-desktop.jpg" alt="Painel do negócio do GL Atende no computador" loading="lazy"><img class="pv-p2" src="assets/glatende-agenda.jpg" alt="Agenda do dia no celular" loading="lazy"><img class="pv-p1" src="assets/glatende-chat.jpg" alt="Conversa de agendamento com o assistente no celular" loading="lazy"></a><div class="cbody"><span class="soon">DEMO NO AR</span><h3>GL Atende</h3><p>Assistente que atende no WhatsApp: responde dúvidas, agenda, confirma e remarca horários. Painel com agenda, conversas, clientes e relatórios. Troque entre barbearia, clínica, oficina e academia.</p><a class="go" href="demos/gl-atende/index.html" target="_blank" rel="noopener">Abrir demonstração <svg class="i" style="width:16px;height:16px"><use href="#arrow"/></svg></a><div class="hint">Converse como cliente e veja o agendamento aparecer no painel.</div></div></article>
     <article class="case rv"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><div class="line"></div><div class="line o"></div><div class="blk"><b></b><b></b><b></b></div></div><div class="cbody"><span class="soon">EM BREVE</span><h3>Painel de gestão</h3><p>Controle de clientes, pedidos e estoque.</p></div></article>
   </div>
+  <div class="custom rv"><div class="cu-txt"><div class="eyebrow">Sob medida</div><h3>O seu projeto, do seu jeito</h3><p>Estes são só exemplos. Todo sistema, app ou site pode ser construído com as suas preferências e o modelo que você imaginar: cores, logotipo, funcionalidades, forma de trabalhar e integrações. Você personaliza o que quiser, e a gente entrega pronto para o seu negócio.</p><div class="cu-chips"><span>Suas cores e seu logotipo</span><span>Funcionalidades à sua escolha</span><span>Integra com o que você já usa</span><span>Celular e computador</span><span>Cresce junto com o negócio</span></div></div><a class="btn" href="#contato">Quero o meu <svg><use href="#arrow"/></svg></a></div>
 </div></section>
 
 <section id="processo" class="alt"><div class="wrap">
