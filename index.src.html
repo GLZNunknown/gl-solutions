@@ -121,6 +121,14 @@ h2{font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.03em;line-height:1.1;font-w
 .case h3{margin:14px 0 6px;font-size:1.15rem}
 .case p{color:var(--muted);font-size:.93rem}
 a.shot{display:block;text-decoration:none}
+
+.shot.preview{height:auto;aspect-ratio:16/10.4;padding:0;overflow:hidden}
+.shot.preview:after{pointer-events:none;z-index:3}
+.shot.preview img{position:absolute;display:block;height:auto;border-radius:10px;box-shadow:0 12px 32px rgba(0,0,0,.45);transition:transform .35s}
+.shot.preview .pv-d{left:5%;top:9%;width:68%;border:1px solid rgba(255,255,255,.14)}
+.shot.preview .pv-p1{right:4%;top:15%;width:27%;border-radius:16px;border:3px solid #0A1226;z-index:2}
+.shot.preview .pv-p2{right:24%;top:30%;width:27%;border-radius:16px;border:3px solid #0A1226;z-index:1}
+.case:hover .shot.preview .pv-p1{transform:translateY(-6px)}.case:hover .shot.preview .pv-p2{transform:translateY(-3px)}
 .case.live .go{display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:var(--orange);font-weight:700;text-decoration:none}
 .case.live .go:hover{text-decoration:underline}
 .case .hint{margin-top:8px;font-size:.8rem;color:var(--muted)}
@@ -283,7 +291,7 @@ footer img{height:34px;width:auto}
   <p class="sub rv">Cada projeto mostra o problema, o que foi feito e o resultado. O primeiro já está no ar para você testar.</p>
   <div class="cases">
     <!-- Para adicionar um projeto: troque o conteúdo de um bloco .case e tire o selo "Em breve" -->
-    <article class="case rv live"><a class="shot" href="demos/gl-gym/index.html" target="_blank" rel="noopener" aria-label="Abrir demonstração do GL Gym"><div class="bar"><i></i><i></i><i></i></div><div class="line"></div><div class="line o"></div><div class="blk"><b></b><b></b><b></b></div></a><div class="cbody"><span class="soon">DEMO NO AR</span><h3>GL Gym</h3><p>App para academias: treinos com passo a passo, agenda de aulas, planos, financeiro e painel do administrador. Funciona no celular e no computador.</p><a class="go" href="demos/gl-gym/index.html" target="_blank" rel="noopener">Abrir demonstração <svg class="i" style="width:16px;height:16px"><use href="#arrow"/></svg></a><div class="hint">Entre como aluno, professor ou administrador.</div></div></article>
+    <article class="case rv live"><a class="shot preview" href="demos/gl-gym/index.html" target="_blank" rel="noopener" aria-label="Abrir demonstração do GL Gym"><img class="pv-d" src="assets/glgym-desktop.jpg" alt="Painel administrativo do GL Gym no computador" loading="lazy"><img class="pv-p2" src="assets/glgym-treino.jpg" alt="Treino com passo a passo no celular" loading="lazy"><img class="pv-p1" src="assets/glgym-home.jpg" alt="Tela inicial do aluno no celular" loading="lazy"></a><div class="cbody"><span class="soon">DEMO NO AR</span><h3>GL Gym</h3><p>App para academias: treinos com passo a passo, agenda de aulas, planos, financeiro e painel do administrador. Funciona no celular e no computador.</p><a class="go" href="demos/gl-gym/index.html" target="_blank" rel="noopener">Abrir demonstração <svg class="i" style="width:16px;height:16px"><use href="#arrow"/></svg></a><div class="hint">Entre como aluno, professor ou administrador.</div></div></article>
     <article class="case rv"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><div class="line"></div><div class="line o"></div><div class="blk"><b></b><b></b><b></b></div></div><div class="cbody"><span class="soon">EM BREVE</span><h3>Automação de atendimento</h3><p>Do primeiro contato ao agendamento confirmado.</p></div></article>
     <article class="case rv"><div class="shot"><div class="bar"><i></i><i></i><i></i></div><div class="line"></div><div class="line o"></div><div class="blk"><b></b><b></b><b></b></div></div><div class="cbody"><span class="soon">EM BREVE</span><h3>Painel de gestão</h3><p>Controle de clientes, pedidos e estoque.</p></div></article>
   </div>
