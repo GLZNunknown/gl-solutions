@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Odonto Aurora — Clínica odontológica em Santo André</title>
+<meta name="description" content="Clínica odontológica com avaliação gratuita, atendimento sem dor e parcelamento em até 12x. Implantes, ortodontia, clareamento, lentes e odontopediatria.">
+<meta name="theme-color" content="#0f7f86">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%230f7f86'/%3E%3Cpath d='M10 9c2-1 4 0 6 1 2-1 4-2 6-1 3 2 2 7 0 10-1 3-1 6-3 6s-2-4-3-4-1 4-3 4-2-3-3-6c-2-3-3-8 0-10z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f9fa;--white:#fff;--ink:#0d2a33;--muted:#58707a;--line:#dceaed;--teal:#0f7f86;--teal2:#0b656b;--soft:#dff1f1;--coral:#ff7a59;--coral2:#f0623f;--sun:#ffd166;--disp:'Outfit',system-ui,sans-serif;--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--r:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 var(--sans);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3{font-family:var(--disp);font-weight:600;line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:99px;font-weight:600;border:0;transition:.2s}
+.btn.coral{background:var(--coral);color:#fff;box-shadow:0 12px 26px -10px rgba(255,122,89,.7)}.btn.coral:hover{background:var(--coral2);transform:translateY(-1px)}
+.btn.soft{background:var(--soft);color:var(--teal2)}.btn.soft:hover{background:#cfe9e9}
+.top{background:var(--teal2);color:#d7efef;font-size:.82rem}.top .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:8px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font:700 1.3rem var(--disp)}.logo svg{width:36px;height:36px}.logo span{color:var(--teal)}
+.menu{display:flex;gap:28px;font-size:.93rem;font-weight:500;color:var(--muted)}.menu a:hover{color:var(--teal)}
+.btn{white-space:nowrap}.pill b{white-space:nowrap}@media(max-width:600px){.lg{display:none}}
+@media(max-width:900px){.menu{display:none}.top .hide{display:none}.nav .btn{padding:11px 18px;font-size:.88rem}}
+.hero{background:linear-gradient(180deg,var(--bg),#fff);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center;padding-block:64px 80px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 14px 6px 6px;font-size:.84rem;font-weight:500;margin-bottom:22px}.pill b{background:var(--sun);border-radius:99px;padding:3px 10px;font-size:.76rem}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.3rem);margin-bottom:20px}.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p.lead{font-size:1.14rem;color:var(--muted);max-width:520px;margin:0 0 24px}
+.checks{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:10px}.checks li{display:flex;gap:10px;align-items:center;font-weight:500}
+.checks svg{width:22px;height:22px;flex:none}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.art{position:relative;max-width:500px;width:100%;margin-left:auto;aspect-ratio:1/1.02}
+.art .blob{position:absolute;inset:4% 2% 8% 8%;background:var(--teal);border-radius:46% 54% 42% 58%/52% 44% 56% 48%}
+.art .blob2{position:absolute;width:38%;aspect-ratio:1;right:-2%;bottom:6%;background:var(--sun);border-radius:50%;opacity:.9}
+.art svg.tooth{position:absolute;width:52%;left:26%;top:18%;filter:drop-shadow(0 24px 30px rgba(6,60,64,.35))}
+.float{position:absolute;background:#fff;border-radius:18px;padding:14px 16px;box-shadow:0 20px 40px -18px rgba(13,42,51,.45);font-size:.84rem;display:flex;gap:12px;align-items:center}
+.float b{display:block;font:600 1rem var(--disp)}.float span{color:var(--muted)}
+.float.f1{left:0;bottom:16%}.float.f2{right:0;top:6%}
+.ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;flex:none;background:var(--soft);color:var(--teal)}.ic svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:900px){.hero .wrap{grid-template-columns:minmax(0,1fr);padding-block:40px 56px}.art{margin:0 auto;max-width:400px}}
+.strip{border-block:1px solid var(--line);background:#fff}.strip .wrap{display:flex;justify-content:space-around;gap:24px;flex-wrap:wrap;padding-block:22px;color:var(--muted);font-size:.92rem;font-weight:500}.strip b{color:var(--ink)}
+section{padding-block:92px}@media(max-width:700px){section{padding-block:60px}}
+.head{text-align:center;max-width:640px;margin:0 auto 48px}.head small{display:block;color:var(--teal);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;margin-bottom:12px}.head h2{font-size:clamp(2rem,4vw,2.9rem)}.head p{color:var(--muted);margin:14px 0 0;font-size:1.05rem}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.cards{grid-template-columns:minmax(0,1fr)}}
+.tcard{background:var(--bg);border-radius:var(--r);padding:28px;transition:.25s;border:1px solid transparent}
+.tcard:hover{background:#fff;border-color:var(--line);box-shadow:0 24px 44px -26px rgba(13,42,51,.35);transform:translateY(-3px)}
+.tcard .ic{width:52px;height:52px;border-radius:16px;background:#fff;margin-bottom:18px}.tcard .ic svg{width:26px;height:26px}
+.tcard h3{font-size:1.3rem;margin-bottom:8px}.tcard p{color:var(--muted);font-size:.95rem;margin:0 0 14px}.tcard .from{font-size:.86rem;color:var(--teal2);font-weight:600}
+.why{background:var(--teal);color:#fff;border-radius:36px;padding:64px 56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.why h2{font-size:clamp(2rem,4vw,2.8rem)}.why p{color:#d3eeee;font-size:1.05rem}
+.wl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.wl div{background:rgba(255,255,255,.1);border-radius:20px;padding:20px}.wl b{display:block;font:600 2rem var(--disp);color:var(--sun)}.wl span{font-size:.9rem;color:#d3eeee}
+@media(max-width:860px){.why{grid-template-columns:minmax(0,1fr);padding:36px 24px;border-radius:26px}}
+.book{background:var(--bg)}
+.booker{background:#fff;border-radius:32px;box-shadow:0 30px 60px -36px rgba(13,42,51,.4);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);overflow:hidden;border:1px solid var(--line)}
+.bk-main{padding:36px}.bk-side{background:var(--teal2);color:#fff;padding:36px;display:flex;flex-direction:column;gap:14px}
+.bk-step{margin-bottom:26px}.bk-step h3{font-size:1.05rem;margin-bottom:12px;display:flex;align-items:center;gap:10px}.bk-step h3 i{width:26px;height:26px;border-radius:50%;background:var(--soft);color:var(--teal2);display:grid;place-items:center;font:600 .82rem var(--disp);font-style:normal}
+.opts{display:flex;flex-wrap:wrap;gap:8px}.opt{border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:10px 14px;font-size:.9rem;font-weight:500;transition:.15s}
+.opt:hover{border-color:var(--teal)}.opt.on{background:var(--teal);border-color:var(--teal);color:#fff}.opt[disabled]{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+.opt.day{display:flex;flex-direction:column;align-items:center;min-width:70px;line-height:1.2}.opt.day small{font-size:.72rem;opacity:.75}.opt.day b{font:600 1.15rem var(--disp)}
+.inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.inputs input{border:1.5px solid var(--line);border-radius:14px;padding:13px 14px;font:inherit;outline:none;min-width:0}.inputs input:focus{border-color:var(--teal)}
+@media(max-width:860px){.booker{grid-template-columns:minmax(0,1fr)}.bk-main,.bk-side{padding:26px 22px}.inputs{grid-template-columns:minmax(0,1fr)}}
+.sum{background:rgba(255,255,255,.1);border-radius:18px;padding:16px;font-size:.92rem}.sum div{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.12)}.sum div:last-child{border:0}.sum span{color:#b9dede}
+.bk-side .btn{width:100%}.bk-side .btn[disabled]{opacity:.5;pointer-events:none}
+.done{display:none;text-align:center;padding:30px 10px}.done svg{width:58px;height:58px}
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}@media(max-width:860px){.team{grid-template-columns:minmax(0,1fr)}}
+.doc{background:var(--bg);border-radius:var(--r);padding:26px;display:flex;gap:18px;align-items:center}
+.doc .av{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#3bb3a9);color:#fff;display:grid;place-items:center;font:600 1.4rem var(--disp);flex:none}
+.doc h3{font-size:1.15rem}.doc small{display:block;color:var(--teal2);font-weight:600;font-size:.78rem;margin:2px 0 4px}.doc p{margin:0;color:var(--muted);font-size:.9rem}
+.revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}@media(max-width:860px){.revs{grid-template-columns:minmax(0,1fr)}}
+.rev{border:1px solid var(--line);border-radius:var(--r);padding:26px}.rev .st{color:#f5b301;letter-spacing:2px}.rev p{margin:10px 0 16px}.rev b{font-size:.92rem}.rev span{display:block;color:var(--muted);font-size:.82rem}
+.faq{background:var(--bg)}.faq .wrap{max-width:820px}
+details{background:#fff;border-radius:18px;margin-bottom:10px;border:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:20px 24px;font:600 1.05rem var(--disp);display:flex;justify-content:space-between;gap:12px;align-items:center}summary::-webkit-details-marker{display:none}
+summary:after{content:"";width:28px;height:28px;border-radius:50%;background:var(--soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b656b' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/14px no-repeat;flex:none;transition:.2s}
+details[open] summary:after{transform:rotate(45deg)}details p{margin:0;padding:0 24px 20px;color:var(--muted)}
+.local{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}@media(max-width:860px){.local{grid-template-columns:minmax(0,1fr)}}
+.lc{background:var(--bg);border-radius:var(--r);padding:30px}.lc h3{font-size:1.4rem;margin-bottom:14px}.lc p{margin:0 0 8px;color:var(--muted)}.lc b{color:var(--ink)}
+.mapbox{border-radius:var(--r);min-height:240px;background:linear-gradient(135deg,#e3f1f2 25%,transparent 25%) 0 0/28px 28px,linear-gradient(225deg,#e3f1f2 25%,transparent 25%) 0 0/28px 28px,#eef7f8;position:relative;display:grid;place-items:center}
+.mapbox a{background:#fff;border-radius:99px;padding:12px 20px;font-weight:600;box-shadow:0 10px 24px -12px rgba(13,42,51,.4);display:flex;gap:8px;align-items:center}
+footer{background:var(--ink);color:#a9c0c6;padding-block:50px 26px;font-size:.9rem}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:30px}@media(max-width:760px){footer .cols{grid-template-columns:minmax(0,1fr)}}
+footer b{color:#fff;display:block;margin-bottom:8px}footer p{margin:0 0 6px}
+footer .fine{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;font-size:.78rem;line-height:1.6}
+.wa{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -6px rgba(0,0,0,.35)}.wa svg{width:30px;height:30px;fill:#fff}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>Seg a sex 8h–20h · Sáb 8h–13h</span><span class="hide">Av. Portugal, 820 — Santo André</span><span>(11) 4000-0000</span></div></div>
+<header><div class="wrap nav">
+  <a class="logo" href="#"><svg viewBox="0 0 40 40"><rect width="40" height="40" rx="12" fill="#0f7f86"/><path d="M12 11c3-1.5 5.5 0 8 1.2C22.5 11 25 9.5 28 11c3.6 2.2 2.6 8.5 0 12.3-1.4 3.5-1.2 7.7-3.8 7.7-2.4 0-2.3-5.2-4.2-5.2s-1.8 5.2-4.2 5.2c-2.6 0-2.4-4.2-3.8-7.7-2.6-3.8-3.6-10.1 0-12.3z" fill="#fff"/></svg><b style="font-weight:700">Odonto <span>Aurora</span></b></a>
+  <nav class="menu"><a href="#tratamentos">Tratamentos</a><a href="#diferenciais">Por que nós</a><a href="#equipe">Equipe</a><a href="#duvidas">Dúvidas</a></nav>
+  <a class="btn coral" href="#agendar">Agendar<span class="lg">&nbsp;avaliação</span></a>
+</div></header>
+
+<main>
+<section class="hero" style="padding:0"><div class="wrap">
+  <div>
+    <span class="pill"><b>Avaliação gratuita</b>neste mês para novos pacientes</span>
+    <h1>Seu sorriso merece cuidado <em>sem medo</em>.</h1>
+    <p class="lead">Tratamentos modernos, explicados com calma e feitos no seu tempo. Do primeiro check-up ao implante, você é acompanhado pela mesma equipe.</p>
+    <ul class="checks">
+      <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#dff1f1"/><path d="M7 12.5l3.2 3L17 8.8" stroke="#0f7f86" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Atendimento com anestesia indolor e sedação consciente</li>
+      <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#dff1f1"/><path d="M7 12.5l3.2 3L17 8.8" stroke="#0f7f86" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Parcelamento em até 12x e convênios odontológicos</li>
+      <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#dff1f1"/><path d="M7 12.5l3.2 3L17 8.8" stroke="#0f7f86" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Horários à noite e aos sábados</li>
+    </ul>
+    <div class="row"><a class="btn coral" href="#agendar">Agendar minha avaliação</a><a class="btn soft" href="#tratamentos">Ver tratamentos</a></div>
+  </div>
+  <div class="art" aria-hidden="true">
+    <div class="blob"></div><div class="blob2"></div>
+    <svg class="tooth" viewBox="0 0 120 130"><defs><linearGradient id="tg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e7f4f4"/></linearGradient></defs><path d="M20 12c12-7 24-2 40 5 16-7 28-12 40-5 18 11 13 42 0 61-7 17-6 44-19 44-12 0-11-26-21-26s-9 26-21 26c-13 0-12-27-19-44C7 54 2 23 20 12z" fill="url(#tg)"/><path d="M34 30c6-4 12-3 18 0" stroke="#bfe3e3" stroke-width="5" stroke-linecap="round" fill="none"/></svg>
+    <div class="float f1"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div><b>Amanhã, 14:30</b><span>próximo horário livre</span></div></div>
+    <div class="float f2"><span class="ic" style="background:#fff4d6;color:#b98500"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><div><b>4,9 no Google</b><span>640 avaliações</span></div></div>
+  </div>
+</div></section>
+<div class="strip"><div class="wrap"><span><b>+12 anos</b> cuidando de sorrisos</span><span><b>8.000+</b> pacientes atendidos</span><span><b>Convênios</b> odontológicos aceitos</span><span><b>12x</b> sem juros no cartão</span></div></div>
+
+<section id="tratamentos"><div class="wrap">
+  <div class="head"><small>Tratamentos</small><h2>Tudo para o seu sorriso em um só lugar</h2><p>Na avaliação você recebe um plano de tratamento por escrito, com prazos e valores claros.</p></div>
+  <div class="cards">
+    <div class="tcard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21V11M8 7l4-4 4 4M5 14c0 4 3 7 7 7s7-3 7-7"/></svg></span><h3>Implantes dentários</h3><p>Reponha dentes perdidos com segurança, firmeza e aparência natural.</p><span class="from">Avaliação e tomografia inclusas</span></div>
+    <div class="tcard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h18M6 9v6M10 9v6M14 9v6M18 9v6"/></svg></span><h3>Ortodontia e alinhadores</h3><p>Aparelho fixo, autoligado ou alinhadores transparentes quase invisíveis.</p><span class="from">A partir de R$ 189/mês</span></div>
+    <div class="tcard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></span><h3>Clareamento</h3><p>Dentes até 8 tons mais claros, em consultório ou com moldeira caseira.</p><span class="from">A partir de R$ 590</span></div>
+    <div class="tcard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 9c0-3 3-5 8-5s8 2 8 5-3 9-8 11C7 18 4 12 4 9z"/></svg></span><h3>Lentes e facetas</h3><p>Harmonize cor, formato e tamanho dos dentes com planejamento digital.</p><span class="from">Simulação do sorriso na avaliação</span></div>
+    <div class="tcard"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 21c0-3.5 2.7-6 6-6s6 2.5 6 6"/></svg></span><h3>Odontopediatria</h3><p>Atendimento lúdico e paciente para que as crianças gostem de ir ao dentista.</p><span class="from">Consultório adaptado para crianças</span></div>
+    <div class="tcard"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c2 3 6 5 6 10a6 6 0 01-12 0c0-5 4-7 6-10z"/></svg></span><h3>Limpeza e prevenção</h3><p>Check-up, limpeza profissional e aplicação de flúor a cada seis meses.</p><span class="from">A partir de R$ 180</span></div>
+  </div>
+</div></section>
+
+<section id="diferenciais" style="padding-top:0"><div class="wrap"><div class="why">
+  <div><h2>Por que nossos pacientes não trocam de dentista</h2><p>Pontualidade, explicação de cada etapa e uma equipe que lembra do seu nome. Usamos scanner intraoral e radiografia digital para tratamentos mais rápidos e precisos.</p><a class="btn coral" href="#agendar" style="margin-top:12px">Quero agendar</a></div>
+  <div class="wl"><div><b>97%</b><span>de pontualidade nas consultas</span></div><div><b>1 dia</b><span>para iniciar o tratamento após a avaliação</span></div><div><b>3D</b><span>planejamento digital do sorriso</span></div><div><b>0</b><span>surpresas no orçamento: tudo por escrito</span></div></div>
+</div></div></section>
+
+<section class="book" id="agendar"><div class="wrap">
+  <div class="head"><small>Agendamento online</small><h2>Escolha o melhor horário para você</h2><p>Leva menos de um minuto. Você recebe a confirmação pelo WhatsApp.</p></div>
+  <div class="booker">
+    <div class="bk-main">
+      <div class="bk-step"><h3><i>1</i>O que você precisa?</h3><div class="opts" id="o-svc"></div></div>
+      <div class="bk-step"><h3><i>2</i>Escolha o dia</h3><div class="opts" id="o-day"></div></div>
+      <div class="bk-step"><h3><i>3</i>Escolha o horário</h3><div class="opts" id="o-time"></div></div>
+      <div class="bk-step" style="margin-bottom:0"><h3><i>4</i>Seus dados</h3><div class="inputs"><input id="b-nome" placeholder="Nome completo" autocomplete="name" aria-label="Nome completo"><input id="b-tel" placeholder="WhatsApp com DDD" inputmode="tel" autocomplete="tel" aria-label="WhatsApp"></div></div>
+    </div>
+    <div class="bk-side">
+      <div id="b-form"><h3 style="font-size:1.4rem;margin-bottom:6px">Resumo</h3><p style="color:#b9dede;margin:0 0 14px;font-size:.92rem">Confira antes de confirmar.</p><div class="sum" id="b-sum"></div><button class="btn coral" id="b-ok" style="margin-top:16px" disabled>Confirmar agendamento</button><p style="font-size:.78rem;color:#b9dede;margin:10px 0 0">Você pode remarcar pelo WhatsApp até 24 horas antes.</p></div>
+      <div class="done" id="b-done" role="status"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="rgba(255,255,255,.15)"/><path d="M7 12.5l3.2 3L17 8.8" stroke="#ffd166" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><h3 style="font-size:1.5rem;margin:12px 0 8px">Horário reservado!</h3><p style="color:#d3eeee;margin:0 0 18px" id="b-msg"></p><button class="btn soft" id="b-new">Fazer outro agendamento</button></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+  <div class="head"><small>Equipe</small><h2>Quem vai cuidar de você</h2></div>
+  <div class="team">
+    <div class="doc"><div class="av">CA</div><div><h3>Dra. Camila Arantes</h3><small>CRO-SP 00000 · Implantodontia</small><p>Responsável técnica. Especialista em implantes e reabilitação oral.</p></div></div>
+    <div class="doc"><div class="av">RB</div><div><h3>Dr. Renato Brandão</h3><small>CRO-SP 00001 · Ortodontia</small><p>Aparelhos fixos e alinhadores transparentes para todas as idades.</p></div></div>
+    <div class="doc"><div class="av">JM</div><div><h3>Dra. Júlia Matos</h3><small>CRO-SP 00002 · Odontopediatria</small><p>Atendimento infantil com paciência e muito carinho.</p></div></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="head"><small>Depoimentos</small><h2>O que dizem os nossos pacientes</h2></div>
+  <div class="revs">
+    <div class="rev"><span class="st">★★★★★</span><p>“Tinha pavor de dentista e saí da consulta sem sentir nada. Explicaram cada passo antes de fazer.”</p><b>Renata P.</b><span>Tratamento de canal</span></div>
+    <div class="rev"><span class="st">★★★★★</span><p>“Fiz meu implante em etapas bem planejadas e o valor foi exatamente o combinado no orçamento.”</p><b>Sérgio L.</b><span>Implante dentário</span></div>
+    <div class="rev"><span class="st">★★★★★</span><p>“Meu filho pede para voltar! A Dra. Júlia tem um jeito incrível com as crianças.”</p><b>Aline F.</b><span>Odontopediatria</span></div>
+  </div>
+</div></section>
+
+<section class="faq" id="duvidas"><div class="wrap">
+  <div class="head"><small>Dúvidas frequentes</small><h2>Ainda tem alguma dúvida?</h2></div>
+  <details open><summary>A avaliação é mesmo gratuita?</summary><p>Sim. Para novos pacientes, a primeira avaliação com exame clínico e plano de tratamento é gratuita. Radiografias, quando necessárias, são informadas antes.</p></details>
+  <details><summary>Vocês aceitam convênio?</summary><p>Atendemos os principais convênios odontológicos para procedimentos cobertos e oferecemos condições especiais para tratamentos particulares.</p></details>
+  <details><summary>Quais são as formas de pagamento?</summary><p>PIX, dinheiro, débito e cartão de crédito em até 12x sem juros, conforme o tratamento.</p></details>
+  <details><summary>Posso remarcar ou cancelar?</summary><p>Pode, sem custo, avisando pelo WhatsApp com pelo menos 24 horas de antecedência.</p></details>
+  <details><summary>Atendem urgência?</summary><p>Sim. Em casos de dor ou trauma, chame pelo WhatsApp e encaixamos você no mesmo dia sempre que possível.</p></details>
+</div></section>
+
+<section><div class="wrap local">
+  <div class="lc"><h3>Como chegar</h3><p><b>Av. Portugal, 820 — Centro, Santo André</b></p><p>Estacionamento conveniado ao lado e acesso para cadeirantes.</p><p style="margin-top:14px"><b>Horários</b><br>Segunda a sexta, 8h às 20h<br>Sábado, 8h às 13h</p><a class="btn coral" href="#agendar" style="margin-top:16px">Agendar avaliação</a></div>
+  <div class="mapbox"><a href="https://www.google.com/maps/search/?api=1&query=Santo+Andr%C3%A9+SP" target="_blank" rel="noopener">📍 Abrir no mapa</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="cols"><div><b style="font:700 1.25rem var(--disp)">Odonto Aurora</b><p>Clínica odontológica para toda a família.</p></div><div><b>Contato</b><p>(11) 4000-0000</p><p>contato@exemplo.com.br</p></div><div><b>Endereço</b><p>Av. Portugal, 820 — Centro<br>Santo André · SP</p></div></div>
+  <div class="fine">Responsável técnica: Dra. Camila Arantes · CRO-SP 00000 (exemplo). Resultados variam de acordo com cada paciente. Página de demonstração criada pela GL Solutions; nomes, registros, preços e depoimentos são fictícios.</div>
+</div></footer>
+<a class="wa" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.5.7c-.2.2-.3.4-.1.6.2.3.8 1.3 1.8 2.1 1.2 1 2.2 1.3 2.5 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.1.1.6-.1 1.1z"/></svg></a>
+<script>
+(function(){
+  var SV=['Avaliação gratuita','Limpeza','Clareamento','Implante','Ortodontia','Urgência / dor'], WD=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+  var st={svc:0,day:null,time:null};
+  function days(){var out=[],d=new Date();d.setHours(12);while(out.length<6){d.setDate(d.getDate()+1);if(d.getDay()!==0)out.push(new Date(d))}return out}
+  var D=days();
+  function key(d){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
+  function times(d){var sat=d.getDay()===6,end=sat?12:19,out=[],seed=d.getDate()*7+d.getMonth();for(var h=8;h<=end;h++){[0,30].forEach(function(m){if(h===end&&m)return;seed=(seed*9301+49297)%233280;out.push({t:(h<10?'0':'')+h+':'+(m?'30':'00'),busy:seed/233280<.38})})}return out}
+  function el(id){return document.getElementById(id)}
+  function render(){
+    el('o-svc').innerHTML=SV.map(function(s,i){return '<button class="opt'+(st.svc===i?' on':'')+'" data-svc="'+i+'">'+s+'</button>'}).join('');
+    el('o-day').innerHTML=D.map(function(d,i){return '<button class="opt day'+(st.day===i?' on':'')+'" data-day="'+i+'"><small>'+(i===0?'Amanhã':WD[d.getDay()])+'</small><b>'+d.getDate()+'</b></button>'}).join('');
+    el('o-time').innerHTML=st.day===null?'<span style="color:var(--muted);font-size:.92rem">Escolha um dia para ver os horários.</span>':times(D[st.day]).map(function(x){return '<button class="opt'+(st.time===x.t?' on':'')+'" data-time="'+x.t+'"'+(x.busy?' disabled aria-label="'+x.t+' ocupado"':'')+'>'+x.t+'</button>'}).join('');
+    var d=st.day!==null?D[st.day]:null;
+    el('b-sum').innerHTML='<div><span>Atendimento</span><b>'+SV[st.svc]+'</b></div><div><span>Dia</span><b>'+(d?WD[d.getDay()]+', '+d.toLocaleDateString('pt-BR'):'—')+'</b></div><div><span>Horário</span><b>'+(st.time||'—')+'</b></div><div><span>Local</span><b>Av. Portugal, 820</b></div>';
+    el('b-ok').disabled=!(d&&st.time);
+  }
+  document.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+    if(b.dataset.svc){st.svc=+b.dataset.svc;render()}
+    if(b.dataset.day){st.day=+b.dataset.day;st.time=null;render()}
+    if(b.dataset.time){st.time=b.dataset.time;render()}
+    if(b.id==='b-ok'){var n=el('b-nome'),t=el('b-tel'),bad=false;[n,t].forEach(function(i){var x=!i.value.trim()||(i===t&&i.value.replace(/\D/g,'').length<10);i.style.borderColor=x?'#e5484d':'';if(x)bad=true});if(bad){(n.value.trim()?t:n).focus();return}
+      var d=D[st.day];el('b-msg').textContent=n.value.trim().split(' ')[0]+', seu horário ('+SV[st.svc].toLowerCase()+') ficou para '+WD[d.getDay()].toLowerCase()+', '+d.toLocaleDateString('pt-BR')+' às '+st.time+'. Enviamos a confirmação para '+t.value+'.';el('b-form').style.display='none';el('b-done').style.display='block'}
+    if(b.id==='b-new'){st={svc:0,day:null,time:null};el('b-form').style.display='';el('b-done').style.display='none';render()}
+  });
+  render();
+})();
+</script>
+</body>
+</html>
